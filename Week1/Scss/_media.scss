@@ -1,0 +1,6 @@
+//平板 rwd
+@mixin pad {
+    @media(max-width: 768px){
+        @content;
+    }
+}
