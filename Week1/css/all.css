@@ -146,14 +146,13 @@ table {
 
 .l-wrap .l-container header {
   width: 100%;
-  height: 180px;
-  padding-top: 48px;
-  padding-bottom: 24px;
+  padding: 48px 0 24px;
   border-bottom: 2px solid #000;
 }
 
 .l-wrap .l-container header h1 {
   font-size: 80px;
+  line-height: 90px;
 }
 
 .l-wrap .l-container main {
@@ -179,12 +178,12 @@ table {
   border-bottom: 1px solid #000;
 }
 
-.l-wrap .l-container main .profile__title h1 {
+.l-wrap .l-container main .profile__title h2 {
   font-size: 32px;
   margin-right: 16px;
 }
 
-.l-wrap .l-container main .profile__title h2 {
+.l-wrap .l-container main .profile__title span {
   font-size: 24px;
   color: #a00404;
   font-weight: bold;
@@ -197,29 +196,24 @@ table {
 }
 
 .l-wrap .l-container main .profile__content--icon {
-  margin-top: 25px;
   width: 16px;
   height: 16px;
   background: #96a9c4;
   border-radius: 50%;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 25px 16px 0;
 }
 
 .l-wrap .l-container main .profile__content--txt {
   margin-top: 16px;
 }
 
-.l-wrap .l-container main .profile__content--txt h4 {
+.l-wrap .l-container main .profile__content--txt p {
   font-size: 24px;
   font-family: PingFangTC-light, sans-serif;
+  line-height: 36px;
 }
 
-.l-wrap .l-container main .profile__content--txt h4 + h4 {
-  margin-top: 11px;
-}
-
-.l-wrap .l-container main .profile__content--txt h4:nth-child(4) {
+.l-wrap .l-container main .profile__content--txt p + p {
   margin-top: 24px;
 }
 
@@ -237,12 +231,12 @@ table {
   border-bottom: 1px solid #000;
 }
 
-.l-wrap .l-container main .education__title h1 {
+.l-wrap .l-container main .education__title h2 {
   font-size: 32px;
   margin-right: 16px;
 }
 
-.l-wrap .l-container main .education__title h2 {
+.l-wrap .l-container main .education__title span {
   font-size: 24px;
   color: #a00404;
   font-weight: bold;
@@ -254,42 +248,40 @@ table {
   display: flex;
 }
 
-.l-wrap .l-container main .education__content--icon .ball {
-  width: 16px;
-  height: 16px;
-  background: #96a9c4;
-  border-radius: 50%;
-  margin: 25px 16px 0 16px;
-}
-
-.l-wrap .l-container main .education__content--icon .ball:last-child {
-  margin-top: 49px;
+.l-wrap .l-container main .education__content--txt {
+  margin-top: 16px;
   position: relative;
 }
 
-.l-wrap .l-container main .education__content--icon .ball:last-child::before {
+.l-wrap .l-container main .education__content--txt::before {
   content: "";
-  height: 50px;
+  height: 66px;
   width: 1px;
   background: #96a9c4;
   display: block;
   position: absolute;
-  top: -50px;
-  left: 7.5px;
+  top: 16px;
+  left: 23px;
 }
 
-.l-wrap .l-container main .education__content--txt {
-  margin-top: 16px;
-}
-
-.l-wrap .l-container main .education__content--txt h4 {
+.l-wrap .l-container main .education__content--txt li {
   font-size: 24px;
   height: 33px;
   font-family: "PingFangTC-light", sans-serif;
   line-height: 36px;
 }
 
-.l-wrap .l-container main .education__content--txt h4:last-child {
+.l-wrap .l-container main .education__content--txt li::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: #96a9c4;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 9px 16px 0 16px;
+}
+
+.l-wrap .l-container main .education__content--txt li:last-child {
   margin-top: 32px;
 }
 
@@ -322,17 +314,17 @@ table {
           justify-content: center;
   padding-bottom: 8px;
   border-bottom: 1px solid #fff;
-}
-
-.l-wrap .l-container main .skills__top--title h1 {
-  font-size: 32px;
-  font-family: "PingFangTC-Medium", sans-serif;
-  margin-right: 16px;
   padding-top: 24px;
   padding-bottom: 8px;
 }
 
-.l-wrap .l-container main .skills__top--title h1:last-child {
+.l-wrap .l-container main .skills__top--title h2 {
+  font-size: 32px;
+  font-family: "PingFangTC-Medium", sans-serif;
+  margin-right: 16px;
+}
+
+.l-wrap .l-container main .skills__top--title span {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -346,18 +338,18 @@ table {
   margin: 40px auto 56px auto;
 }
 
-.l-wrap .l-container main .skills__top--txt h3 {
+.l-wrap .l-container main .skills__top--txt li {
   font-size: 24px;
   height: 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
-.l-wrap .l-container main .skills__top--txt h3 + h3 {
+.l-wrap .l-container main .skills__top--txt li + li {
   margin-top: 16px;
 }
 
-.l-wrap .l-container main .skills__top--txt h3:last-child {
+.l-wrap .l-container main .skills__top--txt li:last-child {
   font-family: "PingFangTC-light", sans-serif;
 }
 
@@ -390,12 +382,12 @@ table {
   border-bottom: 1px solid #000;
 }
 
-.l-wrap .l-container main .experience__title h1 {
+.l-wrap .l-container main .experience__title h2 {
   font-size: 32px;
   margin-right: 16px;
 }
 
-.l-wrap .l-container main .experience__title h2 {
+.l-wrap .l-container main .experience__title span {
   font-size: 24px;
   color: #a00404;
   font-weight: bold;
@@ -409,12 +401,13 @@ table {
 }
 
 .l-wrap .l-container main .experience__txt h3,
-.l-wrap .l-container main .experience__txt h4 {
+.l-wrap .l-container main .experience__txt h4,
+.l-wrap .l-container main .experience__txt li {
   font-size: 24px;
   font-family: "PingFangTC-Medium", sans-serif;
 }
 
-.l-wrap .l-container main .experience__txt h4 {
+.l-wrap .l-container main .experience__txt li {
   margin-top: 32px;
 }
 
@@ -468,11 +461,11 @@ table {
   border-bottom: 1px solid #fff;
 }
 
-.l-wrap .footer__title h1 {
+.l-wrap .footer__title h2 {
   font-size: 32px;
 }
 
-.l-wrap .footer__title h2 {
+.l-wrap .footer__title span {
   font-size: 24px;
   margin-left: 16px;
 }
@@ -482,10 +475,18 @@ table {
   margin-top: 32px;
 }
 
-.l-wrap .footer__txt h5 {
+.l-wrap .footer__txt li {
   font-size: 24px;
-  color: #fff;
   font-family: "PingFangTC-light", sans-serif;
+}
+
+.l-wrap .footer__txt li + li {
+  margin-top: 16px;
+}
+
+.l-wrap .footer__txt li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .l-wrap .footer__txt h5 + h5 {
