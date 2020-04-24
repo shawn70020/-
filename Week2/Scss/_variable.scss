@@ -1,0 +1,43 @@
+/*
+此部分包含所有基本變數
+如h1~h6
+background-color
+text-color
+*/
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 94px;
+    color: #fff;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 75px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 42px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 42px;
+    color: #fff;
+}
+
+img {
+    background-repeat: no-repeat;
+}
+
+$link-color: rgb(35, 63, 35);
+$font-l: 1600px;
+$font-m: $font-l * 2;

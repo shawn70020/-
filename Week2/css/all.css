@@ -1,0 +1,475 @@
+@charset "UTF-8";
+/*
+meyerweb: css-reset
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+此部分包含所有基本變數
+如h1~h6
+background-color
+text-color
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 94px;
+  color: #fff;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 75px;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 42px;
+  color: #fff;
+}
+
+img {
+  background-repeat: no-repeat;
+}
+
+/*
+此部分包含所有相關間距
+*/
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.mt-3 {
+  margin-top: 24px;
+}
+
+.mt-4 {
+  margin-top: 32px;
+}
+
+.mt-5 {
+  margin-top: 40px;
+}
+
+.mt-6 {
+  margin-top: 48px;
+}
+
+.mt-7 {
+  margin-top: 56px;
+}
+
+.mt-8 {
+  margin-top: 64px;
+}
+
+.mt-16 {
+  margin-top: 128px;
+}
+
+/*
+本頁面主語法
+*/
+.banner {
+  width: 100%;
+  background-image: url(../image/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 256px;
+}
+
+.banner h1 {
+  margin-top: 374px;
+}
+
+.banner h1::before {
+  content: "Here's";
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.banner p {
+  font-size: 24px;
+}
+
+.banner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner ul li + li {
+  margin-left: 16px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about img {
+  width: 384px;
+  height: 384px;
+}
+
+.about h2 {
+  font-weight: 500;
+}
+
+.about h2,
+.about h5,
+.about p {
+  font-weight: bold;
+}
+
+.about__content {
+  text-align: center;
+}
+
+.about__content h5 + h5 {
+  margin-top: 8px;
+}
+
+.about__content p {
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+
+.about__content p::after {
+  content: "";
+  display: block;
+  width: 384px;
+  height: 1px;
+  background: #000;
+  margin: 32px auto 0 auto;
+}
+
+.about ul {
+  margin-top: 31px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about ul li {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about ul li + li {
+  margin-top: 32px;
+}
+
+.about ul li::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #891818;
+  margin-right: 16px;
+}
+
+.brand {
+  width: 100%;
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
+
+.brand h2 {
+  padding-top: 64px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.brand h5 {
+  font-weight: 500;
+}
+
+.brand p {
+  font-style: normal;
+}
+
+.brand ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding-bottom: 160px;
+  width: 1200px;
+}
+
+.brand ul li img {
+  width: 588px;
+  height: 416px;
+}
+
+.brand ul li:first-child img {
+  width: 792px;
+  height: 416px;
+}
+
+.brand ul li:last-child {
+  margin-left: 24px;
+}
+
+.otherWork {
+  text-align: center;
+}
+
+.otherWork h2 {
+  padding-top: 64px;
+  font-weight: 500;
+}
+
+.otherWork p {
+  font-style: normal;
+  color: #000;
+}
+
+.otherWork .list {
+  width: 100%;
+  background-image: url(../image/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 160px;
+}
+
+.otherWork .list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.otherWork .list ul p {
+  color: #fff;
+}
+
+.otherWork .list ul:first-child {
+  position: relative;
+  top: -80px;
+}
+
+.otherWork .list ul:first-child li + li {
+  margin-left: 24px;
+}
+
+.otherWork .list ul:first-child li img {
+  width: 384px;
+  height: 528px;
+  vertical-align: middle;
+}
+
+.otherWork .list ul:nth-child(2) {
+  margin-top: -22px;
+}
+
+.otherWork .list ul:nth-child(2) li + li {
+  margin-left: 24px;
+}
+
+.otherWork .list ul:nth-child(2) li img {
+  width: 588px;
+  height: 424px;
+}
+
+.otherWork .list ul:last-child li + li {
+  margin-left: 24px;
+}
+
+.otherWork .list ul:last-child li img {
+  width: 384px;
+  height: 280px;
+}
+
+footer {
+  width: 100%;
+  background: #000;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  color: #fff;
+  text-align: center;
+}
+
+footer h5 {
+  line-height: 36px;
+}
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,210 @@
+/*
+本頁面主語法
+*/
+
+.banner {
+    width: 100%;
+    background-image: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 256px;
+    h1 {
+        margin-top: 374px;
+        &::before {
+            content: "Here's";
+            display: block;
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    p {
+        font-size: 24px;
+    }
+    ul {
+        display: flex;
+        li+li {
+            margin-left: 16px;
+        }
+    }
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 384px;
+        height: 384px;
+    }
+    h2 {
+        font-weight: 500;
+    }
+    h2,
+    h5,
+    p {
+        font-weight: bold;
+    }
+    &__content {
+        text-align: center;
+        h5 {
+            &+h5 {
+                margin-top: 8px;
+            }
+        }
+        p {
+            text-align: center;
+            font-size: 24px;
+            line-height: 36px;
+            color: #000;
+            &::after {
+                content: "";
+                display: block;
+                width: 384px;
+                height: 1px;
+                background: #000;
+                margin: 32px auto 0 auto;
+            }
+        }
+    }
+    ul {
+        margin-top: 31px;
+        align-items: center;
+        text-align: center;
+        li {
+            font-size: 24px;
+            font-weight: bold;
+            &+li {
+                margin-top: 32px;
+            }
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background: #891818;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.brand {
+    width: 100%;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    h2 {
+        padding-top: 64px;
+        font-weight: 500;
+        color: #fff;
+    }
+    h5 {
+        font-weight: 500;
+    }
+    p {
+        font-style: normal;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 160px;
+        width: 1200px;
+        li {
+            img {
+                width: 588px;
+                height: 416px;
+            }
+            &:first-child {
+                img {
+                    width: 792px;
+                    height: 416px;
+                }
+            }
+            &:last-child {
+                margin-left: 24px;
+            }
+        }
+    }
+}
+
+.otherWork {
+    text-align: center;
+    h2 {
+        padding-top: 64px;
+        font-weight: 500;
+    }
+    p {
+        font-style: normal;
+        color: #000;
+    }
+    .list {
+        width: 100%;
+        background-image: url(../image/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 160px;
+        ul {
+            display: flex;
+            justify-content: center;
+            p {
+                color: #fff;
+            }
+            &:first-child {
+                position: relative;
+                top: -80px;
+                li {
+                    &+li {
+                        margin-left: 24px;
+                    }
+                    img {
+                        width: 384px;
+                        height: 528px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                margin-top: -22px;
+                li {
+                    &+li {
+                        margin-left: 24px;
+                    }
+                    img {
+                        width: 588px;
+                        height: 424px;
+                    }
+                }
+            }
+            &:last-child {
+                li {
+                    &+li {
+                        margin-left: 24px;
+                    }
+                    img {
+                        width: 384px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    background: #000;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    color: #fff;
+    text-align: center;
+    h5 {
+        line-height: 36px;
+    }
+}

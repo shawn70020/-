@@ -1,0 +1,40 @@
+/*
+BEM 命名法
+
+block 區塊
+element 元素
+modifier 修飾符
+card__img—-top
+(b)   (e)  (m)
+*/
+
+.list {
+  &__title {
+    width: 50px;
+  }
+  &__img {
+    &--style {
+      width: 50px;
+    }
+  }
+}
+//sass for
+@for $i from 1 to 5 {
+  .box-#{ $i }{
+    background-color: darken(white, $i* 5%);
+  }
+}
+
+//集合變數
+//sass map
+$themes : (
+  'primary' : blue,
+  'danger' : red,
+  'secondary' : orange
+);
+
+@each $key, $value in $themes {
+  .box-#{ $key }{
+    background-color: $value;
+  }
+}
